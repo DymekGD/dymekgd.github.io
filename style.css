@@ -3,27 +3,35 @@
     src: url(Fonts/BraxtonDemo-Regular.otf);
 }
 
+*{
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     color: white;
-    font-size: 16px;
+    font-size: 24px;
     background-image: url(background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     margin: 0;
 }
 
 .intro__container {
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.intro__text {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 100px;
 }
 
 .intro__welcome,
@@ -34,19 +42,22 @@ body {
 }
 
 .intro__welcome {
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: Varela, sans-serif;
 }
 
 .intro__name {
-    font-size: 7rem;
+    font-size: 8rem;
     margin: 0;
     font-family: brax;
+    text-shadow: 5px 5px #fb8c00;
 }
 
 .intro__profession {
     font-size: 1.9rem;
-    margin: 0;
+    margin: 10px;
+    font-style: italic;
+    color: white;
     font-family: Varela, sans-serif;
 }
 
@@ -62,7 +73,7 @@ body {
     transition: all .4s ease-in-out;
     margin: 50px 0;
     text-decoration: none;
-    width: 150px;
+    width: 180px;
     text-align: center;
 }
 
@@ -101,17 +112,50 @@ i.fas,
 }
 
 #about {
-    margin-top: 100vh;
     height: 100vh;
     background-color: white;
+    margin: 0;
 }
 
-@media (max-width: 600px) {
-    body {
-      
-    }
-  }
+.main__menu {
+    transition: 0.5s;
+    width: 300px;
+    height: 100vh;
+    background-color: #fb8c00;
+    margin: 0;
+    padding: 30px 0px 30px 0;
+    position: fixed;
+    left: -300px;
+    list-style-type: none;
+}
 
+.main__menu li {
+    line-height: 4rem;
+    padding: 0 30px;
+    font-family: VAlera;
+}
+
+.asd{
+    width: 40px;
+    height: 40px;
+    background-color:#fb8c00;
+    position: fixed;
+    border-radius: 28px;
+    margin: 0;
+}
+
+.main__menu li:hover {
+    background-color: #ffc046;
+    color: white;
+}
+
+.asd:hover,
+.asd:hover .main__menu {
+    left: 0;
+    position:absolute;
+    transition: all 0.5s;
+    position: fixed;
+}
 
 @keyframes up-down {
     0% {
