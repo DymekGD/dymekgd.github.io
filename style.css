@@ -1,0 +1,134 @@
+@font-face {
+    font-family: brax;
+    src: url(Fonts/BraxtonDemo-Regular.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    font-size: 16px;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.intro__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.intro__welcome,
+.intro__name,
+.intro__profession {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.intro__welcome {
+    font-size: 2rem;
+    font-family: Varela, sans-serif;
+}
+
+.intro__name {
+    font-size: 7rem;
+    margin: 0;
+    font-family: brax;
+}
+
+.intro__profession {
+    font-size: 1.9rem;
+    margin: 0;
+    font-family: Varela, sans-serif;
+}
+
+.myButton {
+	background-color: #fb8c00;
+	border-radius: 28px;
+	border: 2px solid #fb8c00;
+	cursor: pointer;
+	color: #ffffff;
+    font-family: Valera , sans-serif;
+    font-size: 24px;
+    padding: 3px 19px;
+    transition: all .4s ease-in-out;
+    margin: 50px 0;
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+}
+
+.myButton p {
+    display: inline;
+    margin: 0;
+}
+
+.myButton:hover {
+    background-color: rgba(0,0,0,0);
+    color: #fb8c00;
+    transform: scale(0.9);
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.myButton:hover i.fas{
+    display: inline-block;
+    animation: linear up-down .8s infinite;
+}
+
+i.fas,
+.myButton:hover p {
+    display: none;
+}
+
+.myButton:hover p {
+    color: red;
+}
+
+.myButton:hover .arrow::before {
+    display: block;
+}
+
+#about {
+    margin-top: 100vh;
+    height: 100vh;
+    background-color: white;
+}
+
+@media (max-width: 600px) {
+    body {
+      
+    }
+  }
+
+
+@keyframes up-down {
+    0% {
+        transform: translateY(-9px); 
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(9px); 
+        opacity: 0;
+    }
+  }
