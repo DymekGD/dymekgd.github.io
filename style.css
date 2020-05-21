@@ -121,7 +121,7 @@ i.fas,
     background-color: #fb8c00;
     height: 100vh;
     position: fixed;
-    width: 16vw;
+    width: 15vw;
     top: 0;
     left: -14vw;
     transition: left 0.5s;
@@ -157,7 +157,7 @@ i.fas,
     font-size: 3.8vh;
     padding-bottom: 0;
     text-align: center;
-    padding-left: 10%;
+    padding-left: 7%;
     padding-right: 10%;
 }    
 
@@ -206,11 +206,25 @@ i.fas,
 }
 
 .menu i5 {
-    font-size: 4vw;
+    font-size: 5vw;
     position: absolute;
     bottom: 50%;
     transform: rotate(90deg);
-    right: 0.6vw;
+    margin-left: 13vw;
+    position: fixed;
+    transition: .5s;
+    /* color: white; */
+}
+
+.arrow{
+    transition: .5s;
+    color: white;
+}
+
+.arrow:hover,
+.menu:hover .arrow{
+    opacity: 0;
+    transition: .4s;
 }
 
 @keyframes up-down {
