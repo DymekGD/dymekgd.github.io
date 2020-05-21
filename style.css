@@ -117,44 +117,100 @@ i.fas,
     margin: 0;
 }
 
-.main__menu {
-    transition: 0.5s;
-    width: 300px;
-    height: 100vh;
+.menu{
     background-color: #fb8c00;
-    margin: 0;
-    padding: 30px 0px 30px 0;
+    height: 100vh;
     position: fixed;
-    left: -300px;
-    list-style-type: none;
+    width: 16vw;
+    top: 0;
+    left: -14vw;
+    transition: left 0.5s;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
-.main__menu li {
-    line-height: 4rem;
-    padding: 0 30px;
-    font-family: VAlera;
-}
-
-.asd{
-    width: 40px;
-    height: 40px;
-    background-color:#fb8c00;
-    position: fixed;
-    border-radius: 28px;
-    margin: 0;
-}
-
-.main__menu li:hover {
-    background-color: #ffc046;
-    color: white;
-}
-
-.asd:hover,
-.asd:hover .main__menu {
+.menu:hover{
     left: 0;
-    position:absolute;
+}
+
+.menu__links{
+    text-decoration: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+.menu__links li{
+    padding: 20px;
+    transition: .7s;
+}
+
+.menu__links li:hover{
+    background-color: #ffaa00;
+    color:white;
+    transition: .3s;
+}
+
+.menu__icons{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: 3.8vh;
+    padding-bottom: 0;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}    
+
+.menu__icons i1 {
+    color: white;
+    transition: 0.5s;
+}
+
+.menu__icons i1:hover {
+    color: #4267B2;
     transition: all 0.5s;
-    position: fixed;
+    transform: scale(1.1);
+}
+
+.menu__icons i2 {
+    color: white;
+    transition: 0.5s;
+}
+
+.menu__icons i2:hover {
+    color: #7289da;
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+
+.menu__icons i3 {
+    color: white;
+    transition: 0.5s;
+}
+
+.menu__icons i3:hover {
+    color: yellow;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.menu__icons i4 {
+    color: white;
+    transition: 0.5s;
+}
+
+.menu__icons i4:hover {
+    color: black;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.menu i5 {
+    font-size: 4vw;
+    position: absolute;
+    bottom: 50%;
+    transform: rotate(90deg);
+    right: 0.6vw;
 }
 
 @keyframes up-down {
